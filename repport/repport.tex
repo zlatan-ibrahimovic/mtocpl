@@ -1,0 +1,42 @@
+\documentclass{article}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[francais]{babel}
+\usepackage{graphicx}
+\usepackage{verbatim}
+\usepackage{moreverb}
+\usepackage{hyperref}
+\usepackage{listings}
+\usepackage{tikz}
+\usepackage{pdfpages}
+
+\usetikzlibrary{arrows,positioning,automata,shadows,matrix,calc}
+
+\newcommand{\reporttitle}{MTOCPL}     % Titre
+
+\newcommand{\reportsubject}{Document de synthèse} % Sujet
+\newcommand{\HRule}{\rule{\linewidth}{0.5mm}}
+\setlength{\parskip}{1ex} % Espace entre les paragraphes
+
+\hypersetup{
+    pdftitle={\reporttitle},%
+    pdfsubject={\reportsubject},%
+    pdfkeywords={rapport} {vos} {mots} {clés}
+}
+
+\newcommand{\Aut}{\mathcal{A}}
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\ra}{\rightarrow}
+
+\begin{document}
+
+
+ \include{title}
+ \cleardoublepage % Dans le cas du recto verso, ajoute une page blanche si besoin
+ \tableofcontents % Table des matières
+ \sloppy
+ \cleardoublepage
+\section{Introduction}
+
+
+\end{document}

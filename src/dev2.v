@@ -33,9 +33,9 @@ Import PO.
 
 Section Poly.
   Variable A: Type.
-  Variable leb_pol : A -> A -> bool.
-  Variable eqb_pol : A -> A -> bool.
-  Hypothesis inverse_leb :forall a x :A, leb_pol x a = false -> leb_pol a x = true.
+  Variable leb_pol : BoolPreorder.
+  Variable eqb_pol : BoolPreorder.
+  Hypothesis inverse_leb : BoolReverse.
   
 Fixpoint insert_pol (z:A)(l:list A) :=
   match l with 
